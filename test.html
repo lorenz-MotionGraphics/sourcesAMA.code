@@ -1,0 +1,80 @@
+<!doctype html>
+  <head>
+    <style type="text/css">
+     /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+/* Keyframe animation for loader */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+    </style>    
+  </head>
+<body>
+  <script type="text/javascript">
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// When the window loads, display the modal
+window.onload = function() {
+  modal.style.display = "block";
+  updateLoadingPercentage(0);
+}
+
+// Update the loading percentage every second
+function updateLoadingPercentage(percentage) {
+  var loadingText = document.getElementById("loading-text");
+  loadingText.innerHTML = "Loading... " + percentage + "%";
+  if (percentage < 100) {
+    setTimeout(function() {
+      updateLoadingPercentage(percentage + 1);
+    }, 1000);
+  } else {
+    // Once loading is complete, hide the modal
+    modal.style.display = "none";
+  }
+}
+
+  </script>
+<!-- The Loading Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="loader"></div>
+    <p id="loading-text">Loading... 0%</p>
+  </div>
+</div>
+
+</body>
