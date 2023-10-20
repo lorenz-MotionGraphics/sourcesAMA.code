@@ -1,0 +1,243 @@
+.modal { 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+.modal-content {
+   max-height: calc(100vh - 100px);
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+modal-contentp {
+   max-height: calc(100vh - 100px);
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  width: 100%;
+  text-align: left;
+  box-shadow: 1px 5px 20px lightgray;
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content2 {
+  max-height: calc(100vh - 100px);
+   overflow-y: auto;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.pop-up {
+  animation: modal-pop-up 0.3s ease-out;
+}
+
+@keyframes modal-pop-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.card {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  color: black;
+}
+.card.match {
+  display: block;
+}
+.card:not(.match) {
+  display: none;
+}
+strong {
+  color: blue;
+}
+.card-body {
+  background-color: white;
+}
+span.bg-success.chip  {
+  background-color: white !important;
+  color: green;
+  text-shadow: 0px 0px 10px green;
+  margin-left: 25px;
+}
+div.card-footer {
+  background-color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*READING PREVIEW
+    BSIT - The Bachelor of Science in Information Technology (BSIT) program aims to produce globally competitive graduates who will be professionally competent, morally upright, and socially responsible contributors to national development.
+    ETA1 - computer programming 2
+    ETA2 - calculus 1
+    ETA3 - data communication and networking 1
+    ETA4 - art appreciation
+    ETA5 - contemporary world
+    ETA6 - reading in the philipine history
+    ETA7 - euthenics 2
+    1st yr. 3rd term
+    ETA8 - Calculus-Based Physics 1						has source
+    ETA9 - Physical Activities Toward Health and Fitness 1			has source
+    ETA10 - National Service Training Program 1					has source
+    ETA11 - Purposive Communication						has source
+    ETA12 - Discrete Mathematics						has source
+    ETA13 - Ethics								has source
+    ETA14 - Philippine Popular Culture						has source
+    ETA15 - Introduction to Multimedia						has source
+    2nd yr. 1st term
+    ETA16 - Data Communications and Networking 2				has source
+    ETA17 - National Service Training Program 2					has source
+    ETA18 - Physical Activities Toward Health and Fitness 2			has links
+    ETA19 - Calculus-Based Physics						has source
+    ETA20 - Data Structures and Algorithms					has source
+    ETA21 - Information Management						has source
+    ETA22 - Introduction to Human Computer Interaction				has source
+    2nd yr. 2nd term
+    ETA23 - Professional Ethics in IT/						undefined
+		 Social & Professional Issues					has source
+    ETA24 - Data Analysis							has source
+    ETA25 - Physical Activities Toward Health and Fitness 3			no source
+    ETA26 - Data Communications and Networking 3				has source
+    ETA27 - Application Development and Emerging Technologies			has source
+    ETA28 - Quantitative Methods or Quantitative (Same Title)			has source
+    ETA29 - Information Assurance and Security					has source
+    ETA30 - Database Management System 1					has source
+    2nd yr. 3rd term
+    ETA31 - Advanced Database Management Systems				has source
+    ETA32 - Information Assurance and Security 2				has source
+    ETA33 - Data Communications and Networking 4				has source
+    ETA34 - Principles of Operating Systems and Its Applications		has source
+    ETA35 - Current Trends and Issues						has source
+    ETA36 - Science, Technology & Society					has source
+    ETA37 - Physical Activities Toward Health and Fitness 4			no source
+    ETA38 - Major Elective 1							no source
+    3rd yr. 1st term
+    ETA39 - Major Elective 2							no source
+    ETA40 - Technopreneurship							has source
+    ETA41 - Life and Works of Jose Rizal					has source
+    ETA42 - Gender and Society							has links
+    ETA43 - Software Engineering 1						has source
+    ETA44 - Application Lifecycle Management					has source
+    ETA45 - System Integration and Architecture 1				has source
+    3rd yr. 2nd term
+    ETA46 - System Administration and Maintenance				has source
+    ETA47 - Integrative Programming and Technology 1				has source
+    ETA48 - Load Testing							has source
+    ETA49 - Cloud Computing and Internet of Things				has source
+    ETA50 - Capstone Project 1							has source
+    ETA51 - Major Elective 3							no source
+    3rd yr. 3rd term
+    ETA52 - Major Elective 4							no source
+    ETA53 - IT Capstone Project 2						no source
+    ETA54 - Unified Functional Testing						has source
+    4th yr. 1st term
+    ETA55 - IT Practicum (486hrs)						i have no idea
+  -->
+  <!--READING PREVIEW
+    BSCS
+  --
+
+  */ 
